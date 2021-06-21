@@ -80,10 +80,18 @@ abstract class DecorationElement extends WsElement {
               child: Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.translationValues(-contentChangeWidth / 2, -contentChangeHeight / 2, 0),
-                child: Image.asset(
-                  "images/default_decoration_delete.png",
-                  width: ELEMENT_BUTTON_WIDTH,
-                  height: ELEMENT_BUTTON_WIDTH,
+                child: Container(
+                  width: 20,
+                  height: 20,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                  ),
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.white,
+                    size: 20,
+                  ),
                 ),
               ),
               left: 0,
@@ -93,10 +101,18 @@ abstract class DecorationElement extends WsElement {
               child: Transform(
                 alignment: Alignment.center,
                 transform: Matrix4.translationValues(contentChangeWidth / 2, contentChangeHeight / 2, 0),
-                child: Image.asset(
-                  "images/default_decoration_scale.png",
-                  width: ELEMENT_BUTTON_WIDTH,
-                  height: ELEMENT_BUTTON_WIDTH,
+                child: Container(
+                  width: 20,
+                  height: 20,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                  ),
+                  child: Icon(
+                    Icons.rotate_left,
+                    color: Colors.white,
+                    size: 20,
+                  ),
                 ),
               ),
               bottom: 0,

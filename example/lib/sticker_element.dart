@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ins_sticker/flutter_ins_sticker.dart';
 
-import 'decoration_element.dart';
 
 class StickerElement extends DecorationElement {
   StickerElement(double mOriginWidth, double mOriginHeight) : super(mOriginWidth, mOriginHeight);
@@ -8,7 +8,7 @@ class StickerElement extends DecorationElement {
   @override
   Widget initWidget() {
     return Image(
-      image: AssetImage('images/bg.jpg'),
+      image: AssetImage('assets/images/bg.jpg'),
       width: mOriginWidth,
       height: mOriginHeight,
       fit: BoxFit.cover,
